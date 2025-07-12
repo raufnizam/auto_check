@@ -13,6 +13,7 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
                     {isAuthenticated ? (
                         <>
                             <Link to="/dashboard" className="text-gray-700 hover:text-blue-600 mr-4">Dashboard</Link>
+                            <Link to="/chatbot" className="text-gray-700 hover:text-blue-600 mr-4">Chatbot</Link>
                             <Logout onLogout={onLogout} />
                         </>
                     ) : (

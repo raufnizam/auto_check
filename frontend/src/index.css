@@ -24,3 +24,43 @@ body {
 .card {
     @apply bg-white p-6 rounded-lg shadow-lg;
 }
+
+.prose {
+    @apply text-gray-800;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    @apply font-bold;
+}
+
+.prose h1 {
+    @apply text-4xl;
+}
+
+.prose h2 {
+    @apply text-3xl;
+}
+
+.prose h3 {
+    @apply text-2xl;
+}
+
+.prose a {
+    @apply text-blue-600 hover:underline;
+}
+
+.prose ul {
+    @apply list-disc list-inside;
+}
+
+.prose ol {
+    @apply list-decimal list-inside;
+}
+
+.prose pre {
+    @apply bg-gray-800 text-white p-4 rounded-lg;
+}
+
+.prose code {
+    @apply bg-gray-200 text-red-600 px-1 rounded;
+}

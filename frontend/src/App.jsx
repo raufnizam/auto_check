@@ -6,6 +6,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Landing from './components/Landing';
 import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
+import Chatbot from './components/Chatbot';
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -38,6 +39,14 @@ function App() {
                     element={
                         <ProtectedRoute>
                             <Dashboard />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/chatbot"
+                    element={
+                        <ProtectedRoute>
+                            <Chatbot />
                         </ProtectedRoute>
                     }
                 />
